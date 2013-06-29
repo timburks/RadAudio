@@ -1,0 +1,5 @@
+
+RadAudio is a simple Objective-C abstraction that wraps AudioUnits
+so that they can be easily manipulated in Objective-C programs and
+Nu scripts.
+

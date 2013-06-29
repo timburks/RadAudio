@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */; };
+		22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */; };
+		22DF6E49177E7A24004ED9B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E47177E7A24004ED9B0 /* main.m */; };
+		4C78E70C15A38FD100A9D9EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78E70B15A38FD100A9D9EE /* Foundation.framework */; };
+		4C78E71E15A38FED00A9D9EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78E71D15A38FED00A9D9EE /* AudioToolbox.framework */; };
+		4C78E72515A3A58400A9D9EE /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78E72415A3A58400A9D9EE /* AudioUnit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22DF6E40177E7A17004ED9B0 /* RadAudioGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioGraph.h; sourceTree = "<group>"; };
+		22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioGraph.m; sourceTree = "<group>"; };
+		22DF6E42177E7A17004ED9B0 /* RadAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioUnit.h; sourceTree = "<group>"; };
+		22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioUnit.m; sourceTree = "<group>"; };
+		22DF6E47177E7A24004ED9B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C78E70715A38FD100A9D9EE /* sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sample; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C78E70B15A38FD100A9D9EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C78E71D15A38FED00A9D9EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4C78E72415A3A58400A9D9EE /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C78E70415A38FD100A9D9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C78E70C15A38FD100A9D9EE /* Foundation.framework in Frameworks */,
+				4C78E72515A3A58400A9D9EE /* AudioUnit.framework in Frameworks */,
+				4C78E71E15A38FED00A9D9EE /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22DF6E3F177E7A17004ED9B0 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				22DF6E40177E7A17004ED9B0 /* RadAudioGraph.h */,
+				22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */,
+				22DF6E42177E7A17004ED9B0 /* RadAudioUnit.h */,
+				22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */,
+			);
+			path = objc;
+			sourceTree = SOURCE_ROOT;
+		};
+		22DF6E46177E7A24004ED9B0 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				22DF6E47177E7A24004ED9B0 /* main.m */,
+			);
+			path = sample;
+			sourceTree = SOURCE_ROOT;
+		};
+		4C78E6FC15A38FD100A9D9EE = {
+			isa = PBXGroup;
+			children = (
+				4C78E70D15A38FD100A9D9EE /* RadAudio */,
+				4C78E70A15A38FD100A9D9EE /* Frameworks */,
+				4C78E70815A38FD100A9D9EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C78E70815A38FD100A9D9EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C78E70715A38FD100A9D9EE /* sample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C78E70A15A38FD100A9D9EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C78E72415A3A58400A9D9EE /* AudioUnit.framework */,
+				4C78E71D15A38FED00A9D9EE /* AudioToolbox.framework */,
+				4C78E70B15A38FD100A9D9EE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C78E70D15A38FD100A9D9EE /* RadAudio */ = {
+			isa = PBXGroup;
+			children = (
+				22DF6E46177E7A24004ED9B0 /* sample */,
+				22DF6E3F177E7A17004ED9B0 /* objc */,
+			);
+			name = RadAudio;
+			path = AUFilePlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C78E70615A38FD100A9D9EE /* sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C78E71615A38FD100A9D9EE /* Build configuration list for PBXNativeTarget "sample" */;
+			buildPhases = (
+				4C78E70315A38FD100A9D9EE /* Sources */,
+				4C78E70415A38FD100A9D9EE /* Frameworks */,
+				4C78E70515A38FD100A9D9EE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sample;
+			productName = AUFilePlayer;
+			productReference = 4C78E70715A38FD100A9D9EE /* sample */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C78E6FE15A38FD100A9D9EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 4C78E70115A38FD100A9D9EE /* Build configuration list for PBXProject "RadAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C78E6FC15A38FD100A9D9EE;
+			productRefGroup = 4C78E70815A38FD100A9D9EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C78E70615A38FD100A9D9EE /* sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C78E70315A38FD100A9D9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */,
+				22DF6E49177E7A24004ED9B0 /* main.m in Sources */,
+				22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C78E71415A38FD100A9D9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4C78E71515A38FD100A9D9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4C78E71715A38FD100A9D9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sample/Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		4C78E71815A38FD100A9D9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sample/Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C78E70115A38FD100A9D9EE /* Build configuration list for PBXProject "RadAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C78E71415A38FD100A9D9EE /* Debug */,
+				4C78E71515A38FD100A9D9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C78E71615A38FD100A9D9EE /* Build configuration list for PBXNativeTarget "sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C78E71715A38FD100A9D9EE /* Debug */,
+				4C78E71815A38FD100A9D9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C78E6FE15A38FD100A9D9EE /* Project object */;
+}
