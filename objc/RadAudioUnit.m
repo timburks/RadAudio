@@ -88,7 +88,7 @@ void CheckError(OSStatus error, const char *operation)
     CheckError(AudioUnitSetProperty(unit,
                                     kAudioUnitProperty_StreamFormat,
                                     kAudioUnitScope_Input,
-                                    0,
+                                    inputNumber,
                                     &format->format,
                                     sizeof(format->format)), "Audio Unit Set Format failed");
 }
@@ -99,7 +99,7 @@ void CheckError(OSStatus error, const char *operation)
     CheckError(AudioUnitSetProperty(unit,
                                     kAudioUnitProperty_StreamFormat,
                                     kAudioUnitScope_Output,
-                                    0,
+                                    outputNumber,
                                     &format->format,
                                     sizeof(format->format)), "Audio Unit Set Format Failed");
 }
@@ -114,7 +114,7 @@ void CheckError(OSStatus error, const char *operation)
     CFURLRef inputFileURL = CFURLCreateWithFileSystemPath(kCFAllocatorDefault,
                                                           (__bridge CFStringRef) filename,
                                                           kCFURLPOSIXPathStyle,
-                                                          false);    
+                                                          false);
     CheckError(AudioFileOpenURL(inputFileURL,
                                 kAudioFileReadPermission,
                                 0,
@@ -180,7 +180,7 @@ void CheckError(OSStatus error, const char *operation)
                                     0,
                                     &startTime,
                                     sizeof(startTime)),
-               "AudioUnitSetProperty[kAudioUnitProperty_ScheduleStartTimeStamp]");    
+               "AudioUnitSetProperty[kAudioUnitProperty_ScheduleStartTimeStamp]");
 }
 
 - (Float64) duration

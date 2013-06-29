@@ -29,7 +29,7 @@ int main(int argc, const char *argv[])
     toneGeneratorNode1.frequency = 440;
     
     RadAudioToneGeneratorUnit *toneGeneratorNode2 = [player addToneGeneratorNode];
-    toneGeneratorNode2.frequency = 880;
+    toneGeneratorNode2.frequency = 660;
     
     [player connectOutputOfNode:filePlayerNode toInputOfNode:pitchNode];
     [player connectOutputOfNode:pitchNode channel:0 toInputOfNode:mixerNode channel:0];

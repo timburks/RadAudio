@@ -6,11 +6,12 @@
 
 (set filePlayerNode (player addFilePlayerNode))
 (set pitchNode (player addPitchNode))
-(set reverbNode (player addReverbNode))
-(set outputNode (player addOutputNode))
-(set mixerNode (player addMixerNode))
 (set toneGeneratorNode1 (player addToneGeneratorNode))
 (set toneGeneratorNode2 (player addToneGeneratorNode))
+(set mixerNode (player addMixerNode))
+(set reverbNode (player addReverbNode))
+(set outputNode (player addOutputNode))
+
 
 (player connectOutputOfNode:filePlayerNode toInputOfNode:pitchNode)
 (player connectOutputOfNode:pitchNode channel:0 toInputOfNode:mixerNode channel:0)
