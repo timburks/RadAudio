@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "RadAudioUnit.h"
+#import "RadAudioToneGeneratorUnit.h"
+#import "RadAudioFilePlayerUnit.h"
+#import "RadAudioReverbUnit.h"
+#import "RadAudioMixerUnit.h"
+
 
 @interface RadAudioGraph : NSObject
 {

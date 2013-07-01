@@ -25,7 +25,7 @@
 (toneGeneratorNode1 setFrequency:440)
 (toneGeneratorNode2 setFrequency:660)
 
-(filePlayerNode prepareWithFile:@"/Users/tim/Desktop/RadAudio/money.m4a")
+(filePlayerNode prepareWithFile:@"money.m4a")
 (set filePlayerFormat (filePlayerNode formatForOutput))
 
 (mixerNode setNumberOfInputs:3)

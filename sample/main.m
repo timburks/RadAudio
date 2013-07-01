@@ -54,7 +54,7 @@ int main(int argc, const char *argv[])
     
     int playTime;
     if (filePlayerNode) {
-        [filePlayerNode prepareWithFile:@"/Users/tim/Desktop/RadAudio/money.m4a"];
+        [filePlayerNode prepareWithFile:@"/Users/michael/Desktop/Repositories/RadAudio/money.m4a"];
         playTime = [filePlayerNode duration];
     } else {
         playTime = 10;

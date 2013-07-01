@@ -10,6 +10,10 @@
 		22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */; };
 		22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */; };
 		22DF6E49177E7A24004ED9B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E47177E7A24004ED9B0 /* main.m */; };
+		4C4E330917822442002B0B28 /* RadAudioReverbUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E3308178223FA002B0B28 /* RadAudioReverbUnit.m */; };
+		4C4E330C17822516002B0B28 /* RadAudioMixerUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E330B178224D2002B0B28 /* RadAudioMixerUnit.m */; };
+		4C4E330F17822605002B0B28 /* RadAudioFilePlayerUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E330E17822542002B0B28 /* RadAudioFilePlayerUnit.m */; };
+		4C4E3312178226A9002B0B28 /* RadAudioToneGeneratorUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E33111782262C002B0B28 /* RadAudioToneGeneratorUnit.m */; };
 		4C78E70C15A38FD100A9D9EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78E70B15A38FD100A9D9EE /* Foundation.framework */; };
 		4C78E71E15A38FED00A9D9EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78E71D15A38FED00A9D9EE /* AudioToolbox.framework */; };
 		4C78E72515A3A58400A9D9EE /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78E72415A3A58400A9D9EE /* AudioUnit.framework */; };
@@ -21,6 +25,14 @@
 		22DF6E42177E7A17004ED9B0 /* RadAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioUnit.h; sourceTree = "<group>"; };
 		22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioUnit.m; sourceTree = "<group>"; };
 		22DF6E47177E7A24004ED9B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C4E3307178223FA002B0B28 /* RadAudioReverbUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadAudioReverbUnit.h; sourceTree = "<group>"; };
+		4C4E3308178223FA002B0B28 /* RadAudioReverbUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadAudioReverbUnit.m; sourceTree = "<group>"; };
+		4C4E330A178224D2002B0B28 /* RadAudioMixerUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadAudioMixerUnit.h; sourceTree = "<group>"; };
+		4C4E330B178224D2002B0B28 /* RadAudioMixerUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadAudioMixerUnit.m; sourceTree = "<group>"; };
+		4C4E330D17822542002B0B28 /* RadAudioFilePlayerUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadAudioFilePlayerUnit.h; sourceTree = "<group>"; };
+		4C4E330E17822542002B0B28 /* RadAudioFilePlayerUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadAudioFilePlayerUnit.m; sourceTree = "<group>"; };
+		4C4E33101782262C002B0B28 /* RadAudioToneGeneratorUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadAudioToneGeneratorUnit.h; sourceTree = "<group>"; };
+		4C4E33111782262C002B0B28 /* RadAudioToneGeneratorUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadAudioToneGeneratorUnit.m; sourceTree = "<group>"; };
 		4C78E70715A38FD100A9D9EE /* sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sample; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C78E70B15A38FD100A9D9EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C78E71D15A38FED00A9D9EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -48,6 +60,14 @@
 				22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */,
 				22DF6E42177E7A17004ED9B0 /* RadAudioUnit.h */,
 				22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */,
+				4C4E33101782262C002B0B28 /* RadAudioToneGeneratorUnit.h */,
+				4C4E33111782262C002B0B28 /* RadAudioToneGeneratorUnit.m */,
+				4C4E330D17822542002B0B28 /* RadAudioFilePlayerUnit.h */,
+				4C4E330E17822542002B0B28 /* RadAudioFilePlayerUnit.m */,
+				4C4E3307178223FA002B0B28 /* RadAudioReverbUnit.h */,
+				4C4E3308178223FA002B0B28 /* RadAudioReverbUnit.m */,
+				4C4E330A178224D2002B0B28 /* RadAudioMixerUnit.h */,
+				4C4E330B178224D2002B0B28 /* RadAudioMixerUnit.m */,
 			);
 			path = objc;
 			sourceTree = SOURCE_ROOT;
@@ -106,7 +126,6 @@
 			buildPhases = (
 				4C78E70315A38FD100A9D9EE /* Sources */,
 				4C78E70415A38FD100A9D9EE /* Frameworks */,
-				4C78E70515A38FD100A9D9EE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -150,6 +169,10 @@
 				22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */,
 				22DF6E49177E7A24004ED9B0 /* main.m in Sources */,
 				22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */,
+				4C4E3312178226A9002B0B28 /* RadAudioToneGeneratorUnit.m in Sources */,
+				4C4E330F17822605002B0B28 /* RadAudioFilePlayerUnit.m in Sources */,
+				4C4E330917822442002B0B28 /* RadAudioReverbUnit.m in Sources */,
+				4C4E330C17822516002B0B28 /* RadAudioMixerUnit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +242,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "sample/Prefix.pch";
+				GCC_PREFIX_HEADER = sample/Prefix.pch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = x86_64;
 			};
@@ -229,7 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "sample/Prefix.pch";
+				GCC_PREFIX_HEADER = sample/Prefix.pch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = x86_64;
 			};
