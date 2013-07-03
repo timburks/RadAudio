@@ -12,9 +12,33 @@
 
 - (void) prepareWithFile:(NSString *) filename;
 {
+    file = filename;
+    currentFrame = 0;
+    playing = NO;
+    [self play];
+}
+
+- (void) pause
+{
+    if (!playing)
+        return;
+    AudioUnit fileAU = [self audioUnit];
+    AudioTimeStamp timeStamp = {0};
+    UInt32 size = sizeof(timeStamp);
+    AudioUnitGetProperty(fileAU, kAudioUnitProperty_CurrentPlayTime, kAudioUnitScope_Global, 0, &timeStamp, &size);
+    currentFrame += timeStamp.mSampleTime;
+    NSLog(@"paused: %f", currentFrame);
+    CheckError(AudioUnitReset(fileAU, kAudioUnitScope_Global, 0), "reset failed");
+    playing = NO;
+}
+
+- (void) play
+{
+    if (playing)
+        return;
     // Open the input audio file
     CFURLRef inputFileURL = CFURLCreateWithFileSystemPath(kCFAllocatorDefault,
-                                                          (__bridge CFStringRef) filename,
+                                                          (__bridge CFStringRef) file,
                                                           kCFURLPOSIXPathStyle,
                                                           false);
     CheckError(AudioFileOpenURL(inputFileURL,
@@ -50,7 +74,7 @@
                                     &nPackets),
                "AudioFileGetProperty[kAudioFilePropertyAudioDataPacketCount] failed");
     
-    // Tell the file player AU to play the entire file
+    // Tell fileAU to play the remainder of the file, beginning with currentFrame
     ScheduledAudioFileRegion rgn;
     memset(&rgn.mTimeStamp, 0, sizeof(rgn.mTimeStamp));
     rgn.mTimeStamp.mFlags = kAudioTimeStampSampleTimeValid;
@@ -58,10 +82,10 @@
     rgn.mCompletionProc = NULL;
     rgn.mCompletionProcUserData = NULL;
     rgn.mAudioFile = inputFile;
-    rgn.mLoopCount = 1;
-    rgn.mStartFrame = 0;
-    rgn.mFramesToPlay = (UInt32) nPackets *  inputFormat.mFramesPerPacket;
-    
+    rgn.mLoopCount = 0;
+    rgn.mStartFrame = currentFrame;
+    rgn.mFramesToPlay = (UInt32) nPackets *  inputFormat.mFramesPerPacket - currentFrame;
+    NSLog(@"playing: %f", currentFrame);
     CheckError(AudioUnitSetProperty(fileAU,
                                     kAudioUnitProperty_ScheduledFileRegion,
                                     kAudioUnitScope_Global,
@@ -70,7 +94,7 @@
                                     sizeof(rgn)),
                "AudioUnitSetProperty[kAudioUnitProperty_ScheduledFileRegion] failed");
     
-    // Tell the file player AU when to start playing
+    // Tell fileAU how soon to start playing the scheduled region
     AudioTimeStamp startTime;
     memset(&startTime, 0, sizeof(startTime));
     startTime.mFlags = kAudioTimeStampSampleTimeValid;
@@ -83,6 +107,16 @@
                                     &startTime,
                                     sizeof(startTime)),
                "AudioUnitSetProperty[kAudioUnitProperty_ScheduleStartTimeStamp]");
+    playing = YES;
+}
+
+- (void) reset
+{
+    if (playing) {
+        [self pause];
+    }
+    currentFrame = 0;
+    NSLog(@"reset: %f", currentFrame);
 }
 
 - (Float64) duration

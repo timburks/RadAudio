@@ -16,7 +16,6 @@ void CheckError(OSStatus error, const char *operation);
     AudioStreamBasicDescription format;
 }
 
-
 @end
 
 @interface RadAudioUnit : NSObject
@@ -25,6 +24,7 @@ void CheckError(OSStatus error, const char *operation);
     AUGraph graph;
     AUNode audioUnitNode;
     AudioUnit audioUnit;
+    BOOL playing;
 }
 - (id) initWithGraph:(AUGraph) owningGraph;
 - (AudioUnit) audioUnit;

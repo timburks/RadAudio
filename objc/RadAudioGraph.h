@@ -23,6 +23,7 @@
 - (void) openGraph;
 - (void) start;
 - (void) stop;
+- (void) close;
 
 - (RadAudioUnit *) addOutputNode;
 - (RadAudioFilePlayerUnit *) addFilePlayerNode;

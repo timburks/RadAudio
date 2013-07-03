@@ -34,7 +34,11 @@
 
 - (void) stop
 {
-    AUGraphStop(graph);
+    AUGraphStop(graph);    
+}
+
+- (void) close
+{
     AUGraphUninitialize(graph);
     AUGraphClose(graph);
 }

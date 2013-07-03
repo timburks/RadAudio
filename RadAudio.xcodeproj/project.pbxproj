@@ -166,9 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */,
 				22DF6E49177E7A24004ED9B0 /* main.m in Sources */,
 				22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */,
+				22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */,
 				4C4E3312178226A9002B0B28 /* RadAudioToneGeneratorUnit.m in Sources */,
 				4C4E330F17822605002B0B28 /* RadAudioFilePlayerUnit.m in Sources */,
 				4C4E330917822442002B0B28 /* RadAudioReverbUnit.m in Sources */,
