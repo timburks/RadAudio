@@ -6,7 +6,16 @@
 //
 //
 
+#import <Accelerate/Accelerate.h>
+
+
 #import "RadAudioToneGeneratorUnit.h"
+
+typedef void(^RenderBlock)(const AudioTimeStamp *time, int frames, float *output);
+
+@interface RadAudioToneGeneratorUnit ()
+@property (nonatomic, copy) RenderBlock renderBlock;
+@end
 
 @implementation RadAudioToneGeneratorUnit
 
@@ -20,39 +29,33 @@ OSStatus RadAudioToneGeneratorUnitRenderProc(void *inRefCon,
     //    printf ("ToneGeneratorRenderProc needs %ld frames at %f\n",
     //            (unsigned long) inNumberFrames, CFAbsoluteTimeGetCurrent());
     
-    double cycleLength = 44100. / player.frequency;
-    CGFloat step  = 2*M_PI/cycleLength;
-    CGFloat start = player.startingPhase * step;
+    //NSLog(@"%f", inTimeStamp->mSampleTime);
+    
     Float32 *leftChannel = (Float32 *)ioData->mBuffers[0].mData;
     Float32 *rightChannel = (Float32 *)ioData->mBuffers[1].mData;
-    
-#define SINE
-#ifdef SINE
-    for (int frame = 0; frame < inNumberFrames; frame++) {
-        Float32 value = (Float32) sin(frame*step+start);
-        leftChannel[frame] = value;
-        rightChannel[frame] = value;
-    }
-#else
-    for (int frame = 0; frame < inNumberFrames; frame++) {
-        Float32 value = (Float32) sin(frame*step+start);
-        if (value > 0) value = 1;
-        else value = -1;
-        leftChannel[frame] = value;
-        rightChannel[frame] = value;
-    }
-#endif
-    
-    player.startingPhase += inNumberFrames;
+    if (player.renderBlock) {
+        player.renderBlock(inTimeStamp, inNumberFrames, leftChannel);
+        player.renderBlock(inTimeStamp, inNumberFrames, rightChannel);
+    }    
     return noErr;
 }
 
 #pragma mark callback function
 
-- (id) init {
-    if (self = [super init]) {
+- (id) initWithGraph:(AUGraph)owningGraph {
+    if (self = [super initWithGraph:owningGraph]) {
         self.frequency = 880;
-        self.startingPhase = 0;
+        
+        self.renderBlock = ^(const AudioTimeStamp *time, int frames, float *output) {
+            double cycleLength = 44100. / self.frequency;
+            float step  = 2.0*M_PI/cycleLength;
+            float start = time->mSampleTime * step;
+            
+            int bufferSize = frames;
+            Float32 ramp[bufferSize];
+            vDSP_vramp(&start, &step, ramp, 1, bufferSize);
+            vvsinf(output, ramp, &bufferSize);
+        };
     }
     return self;
 }

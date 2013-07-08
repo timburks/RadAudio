@@ -26,10 +26,10 @@ int main(int argc, const char *argv[])
     RadAudioMixerUnit *mixerNode = [player addMixerNode];
     
     RadAudioToneGeneratorUnit *toneGeneratorNode1 = [player addToneGeneratorNode];
-    toneGeneratorNode1.frequency = 440;
+    toneGeneratorNode1.frequency = 660;
     
     RadAudioToneGeneratorUnit *toneGeneratorNode2 = [player addToneGeneratorNode];
-    toneGeneratorNode2.frequency = 660;
+    toneGeneratorNode2.frequency = 880;
     
     [player connectOutputOfNode:filePlayerNode toInputOfNode:pitchNode];
     [player connectOutputOfNode:pitchNode channel:0 toInputOfNode:mixerNode channel:0];
@@ -45,16 +45,16 @@ int main(int argc, const char *argv[])
     [mixerNode setNumberOfInputs:3];
     [mixerNode setFormat:filePlayerFormat forInput:0];
     [mixerNode setFormat:filePlayerFormat forOutput:0];    
-    [mixerNode setVolume:1.0 forInput:0];
+    [mixerNode setVolume:0.5 forInput:0];
     [mixerNode setVolume:0.1 forInput:1];
-    [mixerNode setVolume:0.1 forInput:1];
+    [mixerNode setVolume:0.3 forInput:1];
     [mixerNode setOutputVolume:1.0];
     
     [reverbNode setReverbRoomType:kReverbRoomType_Cathedral];
     
     int playTime;
     if (filePlayerNode) {
-        [filePlayerNode prepareWithFile:@"/Users/michael/Desktop/Repositories/RadAudio/money.m4a"];
+        [filePlayerNode prepareWithFile:@"/Users/tim/Desktop/RadAudio/money.m4a"];
         playTime = [filePlayerNode duration];
     } else {
         playTime = 10;

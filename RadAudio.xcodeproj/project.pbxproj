@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22BDEC30178A859A00B2B5BA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BDEC2F178A859A00B2B5BA /* Accelerate.framework */; };
 		22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */; };
 		22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */; };
 		22DF6E49177E7A24004ED9B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E47177E7A24004ED9B0 /* main.m */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22BDEC2F178A859A00B2B5BA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		22DF6E40177E7A17004ED9B0 /* RadAudioGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioGraph.h; sourceTree = "<group>"; };
 		22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioGraph.m; sourceTree = "<group>"; };
 		22DF6E42177E7A17004ED9B0 /* RadAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioUnit.h; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BDEC30178A859A00B2B5BA /* Accelerate.framework in Frameworks */,
 				4C78E70C15A38FD100A9D9EE /* Foundation.framework in Frameworks */,
 				4C78E72515A3A58400A9D9EE /* AudioUnit.framework in Frameworks */,
 				4C78E71E15A38FED00A9D9EE /* AudioToolbox.framework in Frameworks */,
@@ -100,6 +103,7 @@
 		4C78E70A15A38FD100A9D9EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22BDEC2F178A859A00B2B5BA /* Accelerate.framework */,
 				4C78E72415A3A58400A9D9EE /* AudioUnit.framework */,
 				4C78E71D15A38FED00A9D9EE /* AudioToolbox.framework */,
 				4C78E70B15A38FD100A9D9EE /* Foundation.framework */,
