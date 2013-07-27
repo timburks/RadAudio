@@ -43,7 +43,11 @@
 {
     AudioComponentDescription outputcd = {0};
     outputcd.componentType = kAudioUnitType_Output;
+#if TARGET_OS_IPHONE
+    outputcd.componentSubType = kAudioUnitSubType_RemoteIO;
+#else
     outputcd.componentSubType = kAudioUnitSubType_DefaultOutput;
+#endif
     outputcd.componentManufacturer = kAudioUnitManufacturer_Apple;
     RadAudioUnit *unit = [[RadAudioUnit alloc] initWithGraph:graph];
     CheckError(AUGraphAddNode(graph, &outputcd, &(unit->audioUnitNode)),
@@ -71,7 +75,11 @@
 {
     AudioComponentDescription reverbcd = {0};
     reverbcd.componentType = kAudioUnitType_Effect;
+#if TARGET_OS_IPHONE
+    reverbcd.componentSubType = kAudioUnitSubType_Reverb2;
+#else
     reverbcd.componentSubType = kAudioUnitSubType_MatrixReverb;
+#endif
     reverbcd.componentManufacturer = kAudioUnitManufacturer_Apple;
     // Adds a node with the above description to the graph
     RadAudioReverbUnit *unit = [[RadAudioReverbUnit alloc] initWithGraph:graph];
@@ -87,7 +95,11 @@
     //Generate a description that matches the pitch effect
     AudioComponentDescription pitchcd = {0};
     pitchcd.componentType = kAudioUnitType_Effect;
+#if TARGET_OS_IPHONE
+    pitchcd.componentSubType = kAudioUnitSubType_BandPassFilter;
+#else
     pitchcd.componentSubType = kAudioUnitSubType_Pitch;
+#endif
     pitchcd.componentManufacturer = kAudioUnitManufacturer_Apple;
     RadAudioUnit *unit = [[RadAudioUnit alloc] initWithGraph:graph];
     CheckError(AUGraphAddNode(graph,
@@ -102,7 +114,11 @@
     //Generate a description that matches the pitch effect
     AudioComponentDescription pitchcd = {0};
     pitchcd.componentType = kAudioUnitType_Effect;
+#if TARGET_OS_IPHONE
+    pitchcd.componentSubType = kAudioUnitSubType_BandPassFilter;
+#else
     pitchcd.componentSubType = kAudioUnitSubType_Pitch;
+#endif
     pitchcd.componentManufacturer = kAudioUnitManufacturer_Apple;
     RadAudioToneGeneratorUnit *unit = [[RadAudioToneGeneratorUnit alloc] initWithGraph:graph];
     CheckError(AUGraphAddNode(graph,
@@ -118,7 +134,11 @@
     //Generate a description that matches the pitch effect
     AudioComponentDescription pitchcd = {0};
     pitchcd.componentType = kAudioUnitType_Effect;
+#if TARGET_OS_IPHONE
+    pitchcd.componentSubType = kAudioUnitSubType_BandPassFilter;
+#else
     pitchcd.componentSubType = kAudioUnitSubType_Pitch;
+#endif
     pitchcd.componentManufacturer = kAudioUnitManufacturer_Apple;
     RadAudioSFXRUnit *unit = [[RadAudioSFXRUnit alloc] initWithGraph:graph];
     CheckError(AUGraphAddNode(graph,

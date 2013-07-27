@@ -1,6 +1,6 @@
 //
 //  main.m
-//  RadAudioGraph
+//  RadAudio
 //
 //  Created by Tim Burks on 6/25/12.
 //  Copyright (c) 2013 Radtastical Inc. All rights reserved.
@@ -47,10 +47,10 @@ int main(int argc, const char *argv[])
     [mixerNode setNumberOfInputs:4];
     [mixerNode setFormat:filePlayerFormat forInput:0];
     [mixerNode setFormat:filePlayerFormat forOutput:0];    
-    [mixerNode setVolume:0.0 forInput:0];
-    [mixerNode setVolume:0.0 forInput:1];
-    [mixerNode setVolume:1.0 forInput:2];
-    [mixerNode setVolume:1.0 forInput:3];
+    [mixerNode setVolume:1.0 forInput:0];
+    [mixerNode setVolume:0.02 forInput:1];
+    [mixerNode setVolume:0.02 forInput:2];
+    [mixerNode setVolume:0.02 forInput:3];
     [mixerNode setOutputVolume:1.0];
     
     [reverbNode setReverbRoomType:kReverbRoomType_Plate];

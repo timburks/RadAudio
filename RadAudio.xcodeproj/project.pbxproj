@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2242E65C17A346650015525D /* RadAudioSFXRUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242E65B17A346650015525D /* RadAudioSFXRUnit.m */; };
+		227FD94817A376AF00C450FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78E70B15A38FD100A9D9EE /* Foundation.framework */; };
+		227FD94A17A376AF00C450FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227FD94917A376AF00C450FF /* CoreGraphics.framework */; };
+		227FD94C17A376AF00C450FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227FD94B17A376AF00C450FF /* UIKit.framework */; };
+		227FD95217A376AF00C450FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 227FD95017A376AF00C450FF /* InfoPlist.strings */; };
+		227FD95417A376AF00C450FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 227FD95317A376AF00C450FF /* main.m */; };
+		227FD95817A376AF00C450FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 227FD95717A376AF00C450FF /* AppDelegate.m */; };
+		227FD95A17A376AF00C450FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227FD95917A376AF00C450FF /* Images.xcassets */; };
+		227FD97417A376DA00C450FF /* RadAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */; };
+		227FD97517A376DE00C450FF /* RadAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */; };
+		227FD97617A376E100C450FF /* RadAudioSFXRUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242E65B17A346650015525D /* RadAudioSFXRUnit.m */; };
+		227FD97717A376E400C450FF /* RadAudioToneGeneratorUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E33111782262C002B0B28 /* RadAudioToneGeneratorUnit.m */; };
+		227FD97817A376E700C450FF /* RadAudioFilePlayerUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E330E17822542002B0B28 /* RadAudioFilePlayerUnit.m */; };
+		227FD97917A376EA00C450FF /* RadAudioMixerUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E330B178224D2002B0B28 /* RadAudioMixerUnit.m */; };
+		227FD97A17A376EC00C450FF /* RadAudioReverbUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E3308178223FA002B0B28 /* RadAudioReverbUnit.m */; };
+		227FD97C17A37BB200C450FF /* money.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 227FD97B17A37BB200C450FF /* money.m4a */; };
 		22BDEC30178A859A00B2B5BA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BDEC2F178A859A00B2B5BA /* Accelerate.framework */; };
 		22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */; };
 		22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */; };
@@ -24,6 +39,18 @@
 /* Begin PBXFileReference section */
 		2242E65A17A346650015525D /* RadAudioSFXRUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioSFXRUnit.h; sourceTree = "<group>"; };
 		2242E65B17A346650015525D /* RadAudioSFXRUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioSFXRUnit.m; sourceTree = "<group>"; };
+		227FD94717A376AE00C450FF /* sfxdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sfxdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		227FD94917A376AF00C450FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		227FD94B17A376AF00C450FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		227FD94F17A376AF00C450FF /* sfxdemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sfxdemo-Info.plist"; sourceTree = "<group>"; };
+		227FD95117A376AF00C450FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		227FD95317A376AF00C450FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		227FD95517A376AF00C450FF /* sfxdemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sfxdemo-Prefix.pch"; sourceTree = "<group>"; };
+		227FD95617A376AF00C450FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		227FD95717A376AF00C450FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		227FD95917A376AF00C450FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		227FD96017A376AF00C450FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		227FD97B17A37BB200C450FF /* money.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = money.m4a; sourceTree = "<group>"; };
 		22BDEC2F178A859A00B2B5BA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		22DF6E40177E7A17004ED9B0 /* RadAudioGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioGraph.h; sourceTree = "<group>"; };
 		22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioGraph.m; sourceTree = "<group>"; };
@@ -45,6 +72,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		227FD94417A376AE00C450FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227FD94A17A376AF00C450FF /* CoreGraphics.framework in Frameworks */,
+				227FD94C17A376AF00C450FF /* UIKit.framework in Frameworks */,
+				227FD94817A376AF00C450FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4C78E70415A38FD100A9D9EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,6 +96,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		227FD94D17A376AF00C450FF /* sfxdemo */ = {
+			isa = PBXGroup;
+			children = (
+				227FD97B17A37BB200C450FF /* money.m4a */,
+				227FD95617A376AF00C450FF /* AppDelegate.h */,
+				227FD95717A376AF00C450FF /* AppDelegate.m */,
+				227FD95917A376AF00C450FF /* Images.xcassets */,
+				227FD94E17A376AF00C450FF /* Supporting Files */,
+			);
+			path = sfxdemo;
+			sourceTree = "<group>";
+		};
+		227FD94E17A376AF00C450FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				227FD94F17A376AF00C450FF /* sfxdemo-Info.plist */,
+				227FD95017A376AF00C450FF /* InfoPlist.strings */,
+				227FD95317A376AF00C450FF /* main.m */,
+				227FD95517A376AF00C450FF /* sfxdemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		22DF6E3F177E7A17004ED9B0 /* objc */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4C78E70D15A38FD100A9D9EE /* RadAudio */,
+				227FD94D17A376AF00C450FF /* sfxdemo */,
 				4C78E70A15A38FD100A9D9EE /* Frameworks */,
 				4C78E70815A38FD100A9D9EE /* Products */,
 			);
@@ -101,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				4C78E70715A38FD100A9D9EE /* sample */,
+				227FD94717A376AE00C450FF /* sfxdemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +174,9 @@
 				4C78E72415A3A58400A9D9EE /* AudioUnit.framework */,
 				4C78E71D15A38FED00A9D9EE /* AudioToolbox.framework */,
 				4C78E70B15A38FD100A9D9EE /* Foundation.framework */,
+				227FD94917A376AF00C450FF /* CoreGraphics.framework */,
+				227FD94B17A376AF00C450FF /* UIKit.framework */,
+				227FD96017A376AF00C450FF /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +194,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		227FD94617A376AE00C450FF /* sfxdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 227FD97217A376AF00C450FF /* Build configuration list for PBXNativeTarget "sfxdemo" */;
+			buildPhases = (
+				227FD94317A376AE00C450FF /* Sources */,
+				227FD94417A376AE00C450FF /* Frameworks */,
+				227FD94517A376AE00C450FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sfxdemo;
+			productName = sfxdemo;
+			productReference = 227FD94717A376AE00C450FF /* sfxdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		4C78E70615A38FD100A9D9EE /* sample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C78E71615A38FD100A9D9EE /* Build configuration list for PBXNativeTarget "sample" */;
@@ -166,11 +248,41 @@
 			projectRoot = "";
 			targets = (
 				4C78E70615A38FD100A9D9EE /* sample */,
+				227FD94617A376AE00C450FF /* sfxdemo */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		227FD94517A376AE00C450FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227FD95217A376AF00C450FF /* InfoPlist.strings in Resources */,
+				227FD95A17A376AF00C450FF /* Images.xcassets in Resources */,
+				227FD97C17A37BB200C450FF /* money.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		227FD94317A376AE00C450FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227FD97A17A376EC00C450FF /* RadAudioReverbUnit.m in Sources */,
+				227FD97917A376EA00C450FF /* RadAudioMixerUnit.m in Sources */,
+				227FD97817A376E700C450FF /* RadAudioFilePlayerUnit.m in Sources */,
+				227FD97717A376E400C450FF /* RadAudioToneGeneratorUnit.m in Sources */,
+				227FD97617A376E100C450FF /* RadAudioSFXRUnit.m in Sources */,
+				227FD97517A376DE00C450FF /* RadAudioUnit.m in Sources */,
+				227FD97417A376DA00C450FF /* RadAudioGraph.m in Sources */,
+				227FD95817A376AF00C450FF /* AppDelegate.m in Sources */,
+				227FD95417A376AF00C450FF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4C78E70315A38FD100A9D9EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,7 +300,80 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		227FD95017A376AF00C450FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				227FD95117A376AF00C450FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		227FD96E17A376AF00C450FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sfxdemo/sfxdemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "sfxdemo/sfxdemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		227FD96F17A376AF00C450FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sfxdemo/sfxdemo-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				INFOPLIST_FILE = "sfxdemo/sfxdemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		4C78E71415A38FD100A9D9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -271,6 +456,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		227FD97217A376AF00C450FF /* Build configuration list for PBXNativeTarget "sfxdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				227FD96E17A376AF00C450FF /* Debug */,
+				227FD96F17A376AF00C450FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4C78E70115A38FD100A9D9EE /* Build configuration list for PBXProject "RadAudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
