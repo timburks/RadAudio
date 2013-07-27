@@ -10,13 +10,20 @@
 // we have to put this somewhere
 void CheckError(OSStatus error, const char *operation);
 
+typedef OSStatus (^RadRenderProc)(void *inRefCon,
+                                  AudioUnitRenderActionFlags *ioActionFlags,
+                                  const AudioTimeStamp *inTimeStamp,
+                                  UInt32 inBusNumber,
+                                  UInt32 inNumberFrames,
+                                  AudioBufferList *ioData);
+
+typedef void(^RenderBlock)(const AudioTimeStamp *time, int frames, float *output);
+
 @interface RadAudioFormat : NSObject
 {
 @public
     AudioStreamBasicDescription format;
 }
-
-
 @end
 
 @interface RadAudioUnit : NSObject

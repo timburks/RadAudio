@@ -28,13 +28,15 @@ int main(int argc, const char *argv[])
     RadAudioToneGeneratorUnit *toneGeneratorNode1 = [player addToneGeneratorNode];
     toneGeneratorNode1.frequency = 660;
     
-    RadAudioToneGeneratorUnit *toneGeneratorNode2 = [player addToneGeneratorNode];
-    toneGeneratorNode2.frequency = 880;
+    RadAudioSFXRUnit *sfxrNode = [player addSFXRNode];
+    RadAudioSFXRUnit *sfxrNode2 = [player addSFXRNode];
+    
     
     [player connectOutputOfNode:filePlayerNode toInputOfNode:pitchNode];
     [player connectOutputOfNode:pitchNode channel:0 toInputOfNode:mixerNode channel:0];
     [player connectOutputOfNode:toneGeneratorNode1 channel:0 toInputOfNode:mixerNode channel:1];
-    [player connectOutputOfNode:toneGeneratorNode2 channel:0 toInputOfNode:mixerNode channel:2];
+    [player connectOutputOfNode:sfxrNode channel:0 toInputOfNode:mixerNode channel:2];
+    [player connectOutputOfNode:sfxrNode2 channel:0 toInputOfNode:mixerNode channel:3];
     [player connectOutputOfNode:mixerNode toInputOfNode:reverbNode];
     [player connectOutputOfNode:reverbNode toInputOfNode:outputNode];
     
@@ -42,25 +44,30 @@ int main(int argc, const char *argv[])
     
     RadAudioFormat *filePlayerFormat = [filePlayerNode formatForOutput];
 
-    [mixerNode setNumberOfInputs:3];
+    [mixerNode setNumberOfInputs:4];
     [mixerNode setFormat:filePlayerFormat forInput:0];
     [mixerNode setFormat:filePlayerFormat forOutput:0];    
-    [mixerNode setVolume:0.5 forInput:0];
-    [mixerNode setVolume:0.1 forInput:1];
-    [mixerNode setVolume:0.3 forInput:1];
+    [mixerNode setVolume:0.0 forInput:0];
+    [mixerNode setVolume:0.0 forInput:1];
+    [mixerNode setVolume:1.0 forInput:2];
+    [mixerNode setVolume:1.0 forInput:3];
     [mixerNode setOutputVolume:1.0];
     
-    [reverbNode setReverbRoomType:kReverbRoomType_Cathedral];
+    [reverbNode setReverbRoomType:kReverbRoomType_Plate];
     
     int playTime;
     if (filePlayerNode) {
-        [filePlayerNode prepareWithFile:@"/Users/tim/Desktop/RadAudio/money.m4a"];
+        [filePlayerNode prepareWithFile:@"/Users/tim/Desktop/Repositories/RadAudio/money.m4a"];
         playTime = [filePlayerNode duration];
     } else {
         playTime = 10;
     }
     
+    [sfxrNode jump];
+    [sfxrNode2 explosion];
+    
     [player start];
+
     usleep(playTime*1000*1000);
     [player stop];
     

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RadAudioUnit.h"
 #import "RadAudioToneGeneratorUnit.h"
+#import "RadAudioSFXRUnit.h"
 #import "RadAudioFilePlayerUnit.h"
 #import "RadAudioReverbUnit.h"
 #import "RadAudioMixerUnit.h"
@@ -29,6 +30,7 @@
 - (RadAudioReverbUnit *) addReverbNode;
 - (RadAudioUnit *) addPitchNode;
 - (RadAudioToneGeneratorUnit *) addToneGeneratorNode;
+- (RadAudioSFXRUnit *) addSFXRNode;
 - (RadAudioMixerUnit *) addMixerNode;
 
 - (void) connectOutputOfNode:(RadAudioUnit *) outputNode channel:(int) outputChannel

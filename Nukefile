@@ -4,7 +4,7 @@
 (set @arch (list "x86_64"))
 (set @cc "clang")
 (set @cflags "-fobjc-arc")
-(set @ldflags "-framework Foundation -framework AudioToolbox -framework AudioUnit")
+(set @ldflags "-framework Foundation -framework AudioToolbox -framework AudioUnit -framework Accelerate")
 
 ;; framework description
 (set @framework "RadAudio")

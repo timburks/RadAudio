@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2242E65C17A346650015525D /* RadAudioSFXRUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242E65B17A346650015525D /* RadAudioSFXRUnit.m */; };
 		22BDEC30178A859A00B2B5BA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BDEC2F178A859A00B2B5BA /* Accelerate.framework */; };
 		22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */; };
 		22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2242E65A17A346650015525D /* RadAudioSFXRUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioSFXRUnit.h; sourceTree = "<group>"; };
+		2242E65B17A346650015525D /* RadAudioSFXRUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioSFXRUnit.m; sourceTree = "<group>"; };
 		22BDEC2F178A859A00B2B5BA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		22DF6E40177E7A17004ED9B0 /* RadAudioGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioGraph.h; sourceTree = "<group>"; };
 		22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioGraph.m; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */,
 				22DF6E42177E7A17004ED9B0 /* RadAudioUnit.h */,
 				22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */,
+				2242E65A17A346650015525D /* RadAudioSFXRUnit.h */,
+				2242E65B17A346650015525D /* RadAudioSFXRUnit.m */,
 				4C4E33101782262C002B0B28 /* RadAudioToneGeneratorUnit.h */,
 				4C4E33111782262C002B0B28 /* RadAudioToneGeneratorUnit.m */,
 				4C4E330D17822542002B0B28 /* RadAudioFilePlayerUnit.h */,
@@ -176,6 +181,7 @@
 				4C4E3312178226A9002B0B28 /* RadAudioToneGeneratorUnit.m in Sources */,
 				4C4E330F17822605002B0B28 /* RadAudioFilePlayerUnit.m in Sources */,
 				4C4E330917822442002B0B28 /* RadAudioReverbUnit.m in Sources */,
+				2242E65C17A346650015525D /* RadAudioSFXRUnit.m in Sources */,
 				4C4E330C17822516002B0B28 /* RadAudioMixerUnit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

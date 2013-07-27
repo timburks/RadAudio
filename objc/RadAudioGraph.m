@@ -113,6 +113,22 @@
     return unit;
 }
 
+- (RadAudioSFXRUnit *) addSFXRNode
+{
+    //Generate a description that matches the pitch effect
+    AudioComponentDescription pitchcd = {0};
+    pitchcd.componentType = kAudioUnitType_Effect;
+    pitchcd.componentSubType = kAudioUnitSubType_Pitch;
+    pitchcd.componentManufacturer = kAudioUnitManufacturer_Apple;
+    RadAudioSFXRUnit *unit = [[RadAudioSFXRUnit alloc] initWithGraph:graph];
+    CheckError(AUGraphAddNode(graph,
+                              &pitchcd,
+                              &(unit->audioUnitNode)),
+               "AUGraphAddNode[kAudioUnitSubType_Pitch] failed");
+    [unit prepare];
+    return unit;
+}
+
 - (RadAudioMixerUnit *) addMixerNode
 {
     AudioComponentDescription mixercd = {0};
@@ -125,7 +141,7 @@
     CheckError(AUGraphAddNode(graph,
                               &mixercd,
                               &(unit->audioUnitNode)),
-               "AUGraphAddNode[kAudioUnitSubType_Pitch] failed");
+               "AUGraphAddNode[kAudioUnitSubType_MultiChannelMixer] failed");
     return unit;
 }
 

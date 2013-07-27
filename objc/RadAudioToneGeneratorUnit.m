@@ -11,10 +11,8 @@
 
 #import "RadAudioToneGeneratorUnit.h"
 
-typedef void(^RenderBlock)(const AudioTimeStamp *time, int frames, float *output);
 
 @interface RadAudioToneGeneratorUnit ()
-@property (nonatomic, copy) RenderBlock renderBlock;
 @end
 
 @implementation RadAudioToneGeneratorUnit
