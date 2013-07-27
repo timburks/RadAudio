@@ -8,9 +8,6 @@
 
 #import "RadAudioUnit.h"
 
-
-
-
 @interface RadAudioToneGeneratorUnit : RadAudioUnit
 @property (nonatomic, assign) int startingPhase;
 @property (nonatomic, assign) double frequency;

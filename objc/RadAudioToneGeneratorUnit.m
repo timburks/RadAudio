@@ -7,10 +7,7 @@
 //
 
 #import <Accelerate/Accelerate.h>
-
-
 #import "RadAudioToneGeneratorUnit.h"
-
 
 @interface RadAudioToneGeneratorUnit ()
 @end
@@ -24,11 +21,6 @@ OSStatus RadAudioToneGeneratorUnitRenderProc(void *inRefCon,
                                              UInt32 inNumberFrames,
                                              AudioBufferList *ioData) {
     RadAudioToneGeneratorUnit *player = (__bridge RadAudioToneGeneratorUnit *)inRefCon;
-    //    printf ("ToneGeneratorRenderProc needs %ld frames at %f\n",
-    //            (unsigned long) inNumberFrames, CFAbsoluteTimeGetCurrent());
-    
-    //NSLog(@"%f", inTimeStamp->mSampleTime);
-    
     Float32 *leftChannel = (Float32 *)ioData->mBuffers[0].mData;
     Float32 *rightChannel = (Float32 *)ioData->mBuffers[1].mData;
     if (player.renderBlock) {
@@ -42,10 +34,10 @@ OSStatus RadAudioToneGeneratorUnitRenderProc(void *inRefCon,
 
 - (id) initWithGraph:(AUGraph)owningGraph {
     if (self = [super initWithGraph:owningGraph]) {
-        self.frequency = 880;
-        
+        self.frequency = 880;        
+        RadAudioToneGeneratorUnit *player = self;
         self.renderBlock = ^(const AudioTimeStamp *time, int frames, float *output) {
-            double cycleLength = 44100. / self.frequency;
+            double cycleLength = 44100. / player.frequency;
             float step  = 2.0*M_PI/cycleLength;
             float start = time->mSampleTime * step;
             

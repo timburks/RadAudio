@@ -23,6 +23,8 @@
 		227FD97917A376EA00C450FF /* RadAudioMixerUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E330B178224D2002B0B28 /* RadAudioMixerUnit.m */; };
 		227FD97A17A376EC00C450FF /* RadAudioReverbUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E3308178223FA002B0B28 /* RadAudioReverbUnit.m */; };
 		227FD97C17A37BB200C450FF /* money.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 227FD97B17A37BB200C450FF /* money.m4a */; };
+		227FD98317A3885200C450FF /* SFXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227FD98117A3885200C450FF /* SFXViewController.m */; };
+		227FD98417A3885200C450FF /* SFXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227FD98217A3885200C450FF /* SFXViewController.xib */; };
 		22BDEC30178A859A00B2B5BA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BDEC2F178A859A00B2B5BA /* Accelerate.framework */; };
 		22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */; };
 		22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */; };
@@ -51,6 +53,9 @@
 		227FD95917A376AF00C450FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		227FD96017A376AF00C450FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		227FD97B17A37BB200C450FF /* money.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = money.m4a; sourceTree = "<group>"; };
+		227FD98017A3885200C450FF /* SFXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFXViewController.h; sourceTree = "<group>"; };
+		227FD98117A3885200C450FF /* SFXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFXViewController.m; sourceTree = "<group>"; };
+		227FD98217A3885200C450FF /* SFXViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFXViewController.xib; sourceTree = "<group>"; };
 		22BDEC2F178A859A00B2B5BA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		22DF6E40177E7A17004ED9B0 /* RadAudioGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioGraph.h; sourceTree = "<group>"; };
 		22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioGraph.m; sourceTree = "<group>"; };
@@ -104,6 +109,9 @@
 				227FD95717A376AF00C450FF /* AppDelegate.m */,
 				227FD95917A376AF00C450FF /* Images.xcassets */,
 				227FD94E17A376AF00C450FF /* Supporting Files */,
+				227FD98017A3885200C450FF /* SFXViewController.h */,
+				227FD98117A3885200C450FF /* SFXViewController.m */,
+				227FD98217A3885200C450FF /* SFXViewController.xib */,
 			);
 			path = sfxdemo;
 			sourceTree = "<group>";
@@ -260,6 +268,7 @@
 			files = (
 				227FD95217A376AF00C450FF /* InfoPlist.strings in Resources */,
 				227FD95A17A376AF00C450FF /* Images.xcassets in Resources */,
+				227FD98417A3885200C450FF /* SFXViewController.xib in Resources */,
 				227FD97C17A37BB200C450FF /* money.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +286,7 @@
 				227FD97717A376E400C450FF /* RadAudioToneGeneratorUnit.m in Sources */,
 				227FD97617A376E100C450FF /* RadAudioSFXRUnit.m in Sources */,
 				227FD97517A376DE00C450FF /* RadAudioUnit.m in Sources */,
+				227FD98317A3885200C450FF /* SFXViewController.m in Sources */,
 				227FD97417A376DA00C450FF /* RadAudioGraph.m in Sources */,
 				227FD95817A376AF00C450FF /* AppDelegate.m in Sources */,
 				227FD95417A376AF00C450FF /* main.m in Sources */,
