@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2242E65C17A346650015525D /* RadAudioSFXRUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242E65B17A346650015525D /* RadAudioSFXRUnit.m */; };
+		2251C87617BF310200B1BCEF /* RadAudioSFXRTone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2251C87517BF310200B1BCEF /* RadAudioSFXRTone.m */; };
+		2251C87717BF310200B1BCEF /* RadAudioSFXRTone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2251C87517BF310200B1BCEF /* RadAudioSFXRTone.m */; };
 		227FD94817A376AF00C450FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78E70B15A38FD100A9D9EE /* Foundation.framework */; };
 		227FD94A17A376AF00C450FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227FD94917A376AF00C450FF /* CoreGraphics.framework */; };
 		227FD94C17A376AF00C450FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227FD94B17A376AF00C450FF /* UIKit.framework */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		2242E65A17A346650015525D /* RadAudioSFXRUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioSFXRUnit.h; sourceTree = "<group>"; };
 		2242E65B17A346650015525D /* RadAudioSFXRUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioSFXRUnit.m; sourceTree = "<group>"; };
+		2251C87417BF310200B1BCEF /* RadAudioSFXRTone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioSFXRTone.h; sourceTree = "<group>"; };
+		2251C87517BF310200B1BCEF /* RadAudioSFXRTone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioSFXRTone.m; sourceTree = "<group>"; };
 		227FD94717A376AE00C450FF /* sfxdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sfxdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227FD94917A376AF00C450FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		227FD94B17A376AF00C450FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -144,6 +148,8 @@
 				4C4E3308178223FA002B0B28 /* RadAudioReverbUnit.m */,
 				4C4E330A178224D2002B0B28 /* RadAudioMixerUnit.h */,
 				4C4E330B178224D2002B0B28 /* RadAudioMixerUnit.m */,
+				2251C87417BF310200B1BCEF /* RadAudioSFXRTone.h */,
+				2251C87517BF310200B1BCEF /* RadAudioSFXRTone.m */,
 			);
 			path = objc;
 			sourceTree = SOURCE_ROOT;
@@ -285,6 +291,7 @@
 				227FD97817A376E700C450FF /* RadAudioFilePlayerUnit.m in Sources */,
 				227FD97717A376E400C450FF /* RadAudioToneGeneratorUnit.m in Sources */,
 				227FD97617A376E100C450FF /* RadAudioSFXRUnit.m in Sources */,
+				2251C87717BF310200B1BCEF /* RadAudioSFXRTone.m in Sources */,
 				227FD97517A376DE00C450FF /* RadAudioUnit.m in Sources */,
 				227FD98317A3885200C450FF /* SFXViewController.m in Sources */,
 				227FD97417A376DA00C450FF /* RadAudioGraph.m in Sources */,
@@ -297,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2251C87617BF310200B1BCEF /* RadAudioSFXRTone.m in Sources */,
 				22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */,
 				22DF6E49177E7A24004ED9B0 /* main.m in Sources */,
 				22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */,
@@ -473,6 +481,7 @@
 				227FD96F17A376AF00C450FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C78E70115A38FD100A9D9EE /* Build configuration list for PBXProject "RadAudio" */ = {
 			isa = XCConfigurationList;

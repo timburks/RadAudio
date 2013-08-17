@@ -7,6 +7,11 @@
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 
+@protocol AudioObserver <NSObject>
+- (void) tick:(int) time;
+@end
+
+
 // we have to put this somewhere
 void CheckError(OSStatus error, const char *operation);
 
@@ -33,6 +38,8 @@ typedef void(^RenderBlock)(const AudioTimeStamp *time, int frames, float *output
     AUNode audioUnitNode;
     AudioUnit audioUnit;
 }
+@property (nonatomic, weak) id<AudioObserver> observer;
+
 - (id) initWithGraph:(AUGraph) owningGraph;
 - (AudioUnit) audioUnit;
 

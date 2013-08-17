@@ -13,5 +13,6 @@
 @property (nonatomic, assign) double frequency;
 @property (nonatomic, copy) RadRenderProc renderer;
 @property (nonatomic, copy) RenderBlock renderBlock;
+
 - (void) prepare;
 @end
