@@ -75,29 +75,23 @@
 
 @implementation SFXViewController
 
-- (id) init
+- (void)loadView
 {
-    self = [self initWithNibName:@"SFXViewController" bundle:nil];
-    return self;
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+    [super loadView];
     
     
     self.lightView = [[LightView alloc] initWithFrame:CGRectMake(0,20,self.view.bounds.size.width, 40)];
     [self.view addSubview:self.lightView];
     
+    for (int i = 0; i < 3; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        button.tag = i;
+        button.frame = CGRectMake(0, 100+i*50, 200, 40);
+        button.backgroundColor = [UIColor redColor];
+        [button setTitle:@"BUTTON" forState:UIControlStateNormal];
+        [self.view addSubview:button];
+    }
     
     
     RadAudioGraph *player = [[RadAudioGraph alloc] init];

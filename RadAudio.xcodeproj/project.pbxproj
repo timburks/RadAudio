@@ -26,7 +26,6 @@
 		227FD97A17A376EC00C450FF /* RadAudioReverbUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E3308178223FA002B0B28 /* RadAudioReverbUnit.m */; };
 		227FD97C17A37BB200C450FF /* money.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 227FD97B17A37BB200C450FF /* money.m4a */; };
 		227FD98317A3885200C450FF /* SFXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227FD98117A3885200C450FF /* SFXViewController.m */; };
-		227FD98417A3885200C450FF /* SFXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227FD98217A3885200C450FF /* SFXViewController.xib */; };
 		22BDEC30178A859A00B2B5BA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BDEC2F178A859A00B2B5BA /* Accelerate.framework */; };
 		22DF6E44177E7A17004ED9B0 /* RadAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */; };
 		22DF6E45177E7A17004ED9B0 /* RadAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DF6E43177E7A17004ED9B0 /* RadAudioUnit.m */; };
@@ -59,7 +58,6 @@
 		227FD97B17A37BB200C450FF /* money.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = money.m4a; sourceTree = "<group>"; };
 		227FD98017A3885200C450FF /* SFXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFXViewController.h; sourceTree = "<group>"; };
 		227FD98117A3885200C450FF /* SFXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFXViewController.m; sourceTree = "<group>"; };
-		227FD98217A3885200C450FF /* SFXViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFXViewController.xib; sourceTree = "<group>"; };
 		22BDEC2F178A859A00B2B5BA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		22DF6E40177E7A17004ED9B0 /* RadAudioGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadAudioGraph.h; sourceTree = "<group>"; };
 		22DF6E41177E7A17004ED9B0 /* RadAudioGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadAudioGraph.m; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				227FD94E17A376AF00C450FF /* Supporting Files */,
 				227FD98017A3885200C450FF /* SFXViewController.h */,
 				227FD98117A3885200C450FF /* SFXViewController.m */,
-				227FD98217A3885200C450FF /* SFXViewController.xib */,
 			);
 			path = sfxdemo;
 			sourceTree = "<group>";
@@ -274,7 +271,6 @@
 			files = (
 				227FD95217A376AF00C450FF /* InfoPlist.strings in Resources */,
 				227FD95A17A376AF00C450FF /* Images.xcassets in Resources */,
-				227FD98417A3885200C450FF /* SFXViewController.xib in Resources */,
 				227FD97C17A37BB200C450FF /* money.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +350,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				INFOPLIST_FILE = "sfxdemo/sfxdemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,7 +379,7 @@
 				GCC_PREFIX_HEADER = "sfxdemo/sfxdemo-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				INFOPLIST_FILE = "sfxdemo/sfxdemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

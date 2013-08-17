@@ -10,6 +10,6 @@
 
 @interface SFXViewController : UIViewController 
 
-- (IBAction) buttonPressed:(id) sender;
+- (void) buttonPressed:(id) sender;
 
 @end
